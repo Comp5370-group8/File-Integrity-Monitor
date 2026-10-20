@@ -44,7 +44,7 @@ Detected events will appear in Terminal and be saved to `activity_log.txt`.
 
 Code Development: 
 
-Henry Tran
+Trung-Hieu Tran
 
 Added real-time file monitoring using Python's Watchdog library.
 
