@@ -42,17 +42,12 @@ Install Watchdog using:
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
 
 
-
-
+Code Development: 
 Henry Tran
 
-Implemented real-time file monitoring using Python's Watchdog library.
+Added real-time file monitoring using Python's Watchdog library.
 
-Integrated real-time monitoring with the existing SHA-256 hashing and alert system.
-
-Added detection for rapid file creation and deletion.
-
-Tested the updated implementation on macOS.
+Integrated real-time monitoring with the existing code and added detection for rapid file creation and deletion.
 
 
 Shamyla Taylor
