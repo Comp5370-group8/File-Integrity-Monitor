@@ -40,3 +40,19 @@ Install Watchdog using:
 7. Press `Ctrl+C` to stop monitoring.
 
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
+
+
+Henry Tran
+
+Implemented real-time file monitoring using Python's Watchdog library.
+
+Integrated real-time monitoring with the existing SHA-256 hashing and alert system.
+
+Added detection for rapid file creation and deletion.
+
+Tested the updated implementation on macOS.
+
+
+Shamyla Taylor
+
+Developed the original File Integrity Monitor code, including SHA-256 hashing, file change detection, alerts, and activity logging.
