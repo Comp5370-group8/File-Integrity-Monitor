@@ -42,6 +42,8 @@ Install Watchdog using:
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
 
 
+
+
 Henry Tran
 
 Implemented real-time file monitoring using Python's Watchdog library.
