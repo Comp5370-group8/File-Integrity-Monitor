@@ -19,12 +19,12 @@ The program displays alerts in the terminal and records detected events in `acti
 
 ## Requirements
 
-- Python 3
+- Python 3.8 or newer
 - Watchdog library
 
-Install Watchdog using:
+Install the dependencies using:
 
-`python3 -m pip install watchdog`
+`python3 -m pip install -r requirements.txt`
 
 ## How to Run
 
@@ -40,6 +40,16 @@ Install Watchdog using:
 7. Press `Ctrl+C` to stop monitoring.
 
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
+
+## Running the Tests
+
+Install the development dependencies (Watchdog and pytest):
+
+`python3 -m pip install -r requirements-dev.txt`
+
+Then run the tests from the project folder:
+
+`python3 -m pytest`
 
 
 Code Development: 
