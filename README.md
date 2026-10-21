@@ -58,7 +58,7 @@ The analyzer reads `activity_log.txt` and displays:
 The analyzer runs independently and does not modify the monitored files or the existing monitoring code. If `activity_log.txt` does not exist, it displays a message indicating that the log file was not found.
 
 
-###Code Development: 
+### Code Development: 
 
 Trung-Hieu Tran
 
