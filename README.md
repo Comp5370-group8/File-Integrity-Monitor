@@ -42,7 +42,8 @@ Install Watchdog using:
 
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
 
-### Running the Log Analyzer
+
+## Running the Log Analyzer
 
 After generating file activity using the real-time monitor, open another terminal in the project folder and run:
 
@@ -57,7 +58,7 @@ The analyzer reads `activity_log.txt` and displays:
 The analyzer runs independently and does not modify the monitored files or the existing monitoring code. If `activity_log.txt` does not exist, it displays a message indicating that the log file was not found.
 
 
-Code Development: 
+###Code Development: 
 
 Trung-Hieu Tran
 
