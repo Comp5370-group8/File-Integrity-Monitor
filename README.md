@@ -9,6 +9,8 @@ This project is a Python-based File Integrity Monitor that detects when files ar
 
 The program displays alerts in the terminal and records detected events in `activity_log.txt`.
 
+A separate security log analyzer summarizes recorded file events, identifies frequently changed files, and displays notices for high activity. 
+
 ## Features
 
 - SHA-256 file hashing
