@@ -62,16 +62,16 @@ The analyzer runs independently and does not modify the monitored files or the e
 
 Trung-Hieu Tran
 
-Added real-time file monitoring using Python's Watchdog library.
+- Added real-time file monitoring using Python's Watchdog library.
 
-Integrated real-time monitoring with the existing code and added detection for rapid file creation and deletion.
+- Integrated real-time monitoring with the existing code and added detection for rapid file creation and deletion.
 
 
 Shamyla Taylor
 
-Developed the original File Integrity Monitor code, including SHA-256 hashing, file change detection, alerts, and activity logging.
+- Developed the original File Integrity Monitor code, including SHA-256 hashing, file change detection, alerts, and activity logging.
 
 
 Jihyun Baek
 
-Developed a separate security log analyzer to summarize recorded file events, identify frequently changed files, and display high-activity notices.
+- Developed a separate security log analyzer to summarize recorded file events, identify frequently changed files, and display high-activity notices.
