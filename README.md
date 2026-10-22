@@ -9,6 +9,8 @@ This project is a Python-based File Integrity Monitor that detects when files ar
 
 The program displays alerts in the terminal and records detected events in `activity_log.txt`.
 
+A separate security log analyzer summarizes recorded file events, identifies frequently changed files, and displays notices for high activity. 
+
 ## Features
 
 - SHA-256 file hashing
@@ -16,6 +18,7 @@ The program displays alerts in the terminal and records detected events in `acti
 - Detection of created, modified, and deleted files
 - Timestamped alerts and event logging
 - Detection of rapid file creation and deletion
+- Security log analysis with event summaries, the five most active files, and high-activity notices
 
 ## Requirements
 
@@ -52,15 +55,35 @@ Then run the tests from the project folder:
 `python3 -m pytest`
 
 
-Code Development: 
+## Running the Log Analyzer
+
+After generating file activity using the real-time monitor, open another terminal in the project folder and run:
+
+`python3 log_analysis.py`
+
+The analyzer reads `activity_log.txt` and displays:
+
+- Total numbers of created, modified, and deleted events
+- The five files with the highest recorded event counts
+- A `[NOTICE]` message if the most active file has 10 or more recorded events
+
+The analyzer runs independently and does not modify the monitored files or the existing monitoring code. If `activity_log.txt` does not exist, it displays a message indicating that the log file was not found.
+
+
+### Code Development: 
 
 Trung-Hieu Tran
 
-Added real-time file monitoring using Python's Watchdog library.
+- Added real-time file monitoring using Python's Watchdog library.
 
-Integrated real-time monitoring with the existing code and added detection for rapid file creation and deletion.
+- Integrated real-time monitoring with the existing code and added detection for rapid file creation and deletion.
 
 
 Shamyla Taylor
 
-Developed the original File Integrity Monitor code, including SHA-256 hashing, file change detection, alerts, and activity logging.
+- Developed the original File Integrity Monitor code, including SHA-256 hashing, file change detection, alerts, and activity logging.
+
+
+Jihyun Baek
+
+- Developed a separate security log analyzer to summarize recorded file events, identify frequently changed files, and display high-activity notices.
