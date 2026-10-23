@@ -16,18 +16,19 @@ A separate security log analyzer summarizes recorded file events, identifies fre
 - SHA-256 file hashing
 - Real-time file monitoring using Watchdog
 - Detection of created, modified, and deleted files
+- Saved baseline that detects changes made while the monitor was not running
 - Timestamped alerts and event logging
 - Detection of rapid file creation and deletion
 - Security log analysis with event summaries, the five most active files, and high-activity notices
 
 ## Requirements
 
-- Python 3
+- Python 3.8 or newer
 - Watchdog library
 
-Install Watchdog using:
+Install the dependencies using:
 
-`python3 -m pip install watchdog`
+`python3 -m pip install -r requirements.txt`
 
 ## How to Run
 
@@ -43,6 +44,18 @@ Install Watchdog using:
 7. Press `Ctrl+C` to stop monitoring.
 
 Detected events will appear in Terminal and be saved to `activity_log.txt`.
+
+The monitor saves the SHA-256 hash of every monitored file to `baseline.json`. When it starts again, it compares the folder against this saved baseline and reports any files that were added, modified, or deleted while it was not running. Delete `baseline.json` to start over with a fresh baseline.
+
+## Running the Tests
+
+Install the development dependencies (Watchdog and pytest):
+
+`python3 -m pip install -r requirements-dev.txt`
+
+Then run the tests from the project folder:
+
+`python3 -m pytest`
 
 
 ## Running the Log Analyzer
@@ -77,3 +90,8 @@ Shamyla Taylor
 Jihyun Baek
 
 - Developed a separate security log analyzer to summarize recorded file events, identify frequently changed files, and display high-activity notices.
+
+
+Parker Stephens
+
+- Added a saved baseline to detect changes made while the monitor was not running, fixed editor saves being reported as new files, unified the alert logging format, and added a pytest test suite along with setup files (`requirements.txt`, `requirements-dev.txt`, and `.gitignore`).
